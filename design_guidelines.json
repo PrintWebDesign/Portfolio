@@ -1,0 +1,114 @@
+{
+  "identity": {
+    "name": "Milton Health Centre",
+    "meta_title": "Milton Health Centre | Advanced Care, Human Touch",
+    "meta_description": "A modern sanctuary for your health. Family practice, walk-in, and specialized care in Milton, Ontario.",
+    "theme_mode": "light",
+    "emotional_tone": "The Modern Sanctuary",
+    "visual_style": "Clean, Airy, Hyper-realistic, Trustworthy"
+  },
+  "typography": {
+    "primary_font": "Manrope",
+    "secondary_font": "Public Sans",
+    "accent_font": "Libre Baskerville",
+    "scale": {
+      "h1": "text-5xl md:text-7xl font-bold tracking-tight leading-[1.1]",
+      "h2": "text-3xl md:text-5xl font-semibold tracking-tight",
+      "h3": "text-2xl md:text-3xl font-medium",
+      "body": "text-base md:text-lg leading-relaxed text-slate-600",
+      "caption": "text-sm font-medium tracking-wide text-slate-500 uppercase"
+    },
+    "imports": [
+      "https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Public+Sans:wght@300;400;500;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+    ]
+  },
+  "colors": {
+    "palette": {
+      "background": "#FAFAF9",
+      "foreground": "#0F172A",
+      "primary": "#0F172A",
+      "primary_foreground": "#F8FAFC",
+      "secondary": "#F1F5F9",
+      "secondary_foreground": "#0F172A",
+      "accent": "#3B82F6",
+      "accent_foreground": "#FFFFFF",
+      "muted": "#F8FAFC",
+      "muted_foreground": "#64748B",
+      "border": "#E2E8F0"
+    },
+    "gradients": {
+      "hero_overlay": "linear-gradient(180deg, rgba(250,250,249,0) 0%, #FAFAF9 100%)",
+      "subtle_glow": "radial-gradient(circle at 50% 50%, rgba(59,130,246,0.1) 0%, rgba(250,250,249,0) 70%)"
+    },
+    "utility_classes": {
+      "bg_main": "bg-[#FAFAF9]",
+      "text_main": "text-[#0F172A]",
+      "text_muted": "text-[#64748B]",
+      "border_subtle": "border-[#E2E8F0]"
+    }
+  },
+  "layout": {
+    "spacing": {
+      "container_padding": "px-6 md:px-12 lg:px-24",
+      "section_gap": "py-24 md:py-32",
+      "element_gap": "gap-8"
+    },
+    "grid_system": {
+      "bento_grid": "grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6",
+      "feature_row": "grid grid-cols-1 md:grid-cols-2 gap-16 items-center"
+    },
+    "container_max_width": "max-w-7xl mx-auto"
+  },
+  "components": {
+    "buttons": {
+      "primary": "rounded-full bg-slate-900 text-white px-8 py-4 font-semibold hover:bg-slate-800 transition-all shadow-lg hover:shadow-xl hover:-translate-y-1 active:scale-95",
+      "secondary": "rounded-full bg-white text-slate-900 border border-slate-200 px-8 py-4 font-medium hover:bg-slate-50 transition-all shadow-sm hover:shadow-md",
+      "ghost": "text-slate-600 hover:text-slate-900 font-medium px-4 py-2 hover:bg-slate-100 rounded-lg transition-colors"
+    },
+    "cards": {
+      "service_card": "group relative overflow-hidden rounded-3xl bg-white border border-slate-100 p-8 shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2",
+      "glass_card": "backdrop-blur-xl bg-white/70 border border-white/40 shadow-xl rounded-2xl p-6"
+    },
+    "inputs": {
+      "base": "h-12 rounded-xl border-slate-200 bg-white px-4 focus:ring-2 focus:ring-slate-900/10 focus:border-slate-900 transition-all"
+    }
+  },
+  "motion": {
+    "principles": {
+      "scroll": "Use Lenis for smooth scrolling",
+      "hover": "Spring-based, responsive, never linear",
+      "entrance": "Staggered fade-up for lists, Parallax for hero images"
+    },
+    "parallax": {
+      "hero_depth": "Use differing scroll speeds (y-transforms) for background layers vs foreground text",
+      "image_float": "Gentle vertical oscillation for floating UI elements"
+    }
+  },
+  "media": {
+    "image_style": "Hyper-realistic, high-key lighting, soft shadows, clean clinical environments. Avoid staged 'handshake' stock photos. Focus on equipment, interiors, and genuine interactions.",
+    "assets": {
+      "logo": "https://placehold.co/200x60?text=Milton+Health",
+      "hero_bg": "https://images.unsplash.com/photo-1771574204208-b47e2d863bc5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODF8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBtZWRpY2FsJTIwY2xpbmljJTIwaW50ZXJpb3IlMjBicmlnaHQlMjBjbGVhbnxlbnwwfHx8fDE3NzM4NDE5OTZ8MA&ixlib=rb-4.1.0&q=85",
+      "interior_1": "https://images.pexels.com/photos/5619462/pexels-photo-5619462.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "interior_2": "https://images.pexels.com/photos/7108391/pexels-photo-7108391.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "abstract_medical": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=2070",
+      "doctor_placeholder": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&q=80&w=2070"
+    },
+    "icons": "Use 'lucide-react' for UI icons (Chevron, Menu, Search). Use custom SVGs or 'heroicons' for feature illustrations."
+  },
+  "instructions_to_main_agent": [
+    "1. SETUP: Install 'lenis' for smooth scrolling, 'framer-motion' for animations, 'lucide-react' for icons, and 'clsx'/'tailwind-merge' for class handling.",
+    "2. TYPOGRAPHY: Import the specified fonts in index.css. Do NOT use Inter.",
+    "3. HERO SECTION: Implement a parallax hero. The background image should move slower than the text. Use the 'interior_1' or 'hero_bg' image with a soft white gradient overlay so text is readable.",
+    "4. BENTO GRID: For the Services section, create a grid where 'Walk-in Clinic' and 'Family Practice' take up larger spans (col-span-2) and niche clinics take single spans. Use the 'service_card' style.",
+    "5. FORMS: Use Shadcn UI for the 'Contact' and 'Booking' forms. Customize the borders to be rounded-xl to match the softness.",
+    "6. COLOR: Use the '#FAFAF9' background for the whole page. Do not leave it pure white (#FFFFFF).",
+    "7. DATA-TESTID: Ensure every button, input, and link has a descriptive data-testid attribute."
+  ],
+  "UNIVERSAL_GUIDELINES": [
+    "Do not use generic AI emojis.",
+    "Ensure 3:1 contrast for all text.",
+    "Mobile first responsive design.",
+    "No generic centered layouts for complex content."
+  ]
+}

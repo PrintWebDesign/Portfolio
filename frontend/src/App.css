@@ -1,0 +1,184 @@
+/* Additional App-specific styles */
+
+/* Hero section specific */
+.hero-section {
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Service grid layout */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Large service cards */
+.service-card-large {
+  grid-column: span 1;
+}
+
+@media (min-width: 768px) {
+  .service-card-large {
+    grid-column: span 2;
+  }
+}
+
+/* Testimonial card styles */
+.testimonial-card {
+  min-width: 400px;
+  max-width: 400px;
+}
+
+@media (max-width: 640px) {
+  .testimonial-card {
+    min-width: 320px;
+    max-width: 320px;
+  }
+}
+
+/* Blog card hover effect */
+.blog-card {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.blog-card:hover {
+  transform: translateY(-4px);
+}
+
+.blog-card:hover .blog-image {
+  transform: scale(1.05);
+}
+
+.blog-image {
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Newsletter input group */
+.newsletter-input-group {
+  display: flex;
+  gap: 0.75rem;
+  flex-direction: column;
+}
+
+@media (min-width: 640px) {
+  .newsletter-input-group {
+    flex-direction: row;
+  }
+}
+
+/* Contact form styles */
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  border: 1px solid #E2E8F0;
+  border-radius: 0.75rem;
+  background-color: white;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus {
+  border-color: #0F172A;
+  box-shadow: 0 0 0 3px rgba(15, 23, 42, 0.1);
+}
+
+/* Chat widget animation */
+.chat-widget-enter {
+  animation: slideUp 0.3s ease-out forwards;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Mobile menu animation */
+.mobile-menu-enter {
+  animation: slideDown 0.3s ease-out forwards;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Floating animation for decorative elements */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Pulse animation for chat button */
+@keyframes pulse-ring {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+.chat-button-pulse::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background-color: #3B82F6;
+  animation: pulse-ring 2s ease-out infinite;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Section divider */
+.section-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, #E2E8F0 50%, transparent 100%);
+}
+
+/* Rating stars */
+.star-filled {
+  color: #FBBF24;
+}
+
+.star-empty {
+  color: #E2E8F0;
+}
